@@ -24,6 +24,8 @@ h1 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 0 64px 64px 64px;
+  position: relative;
 }
 
 .tabs {
@@ -34,10 +36,12 @@ h1 {
   text-transform: uppercase;
   font-weight: bold;
   color: rgb(200, 175, 255);
+  margin: 0 0 32px 0;
+  padding: 16px;
 }
 
 .tabs p {
-  padding: 16px;
+  padding: 8px;
 }
 
 .tabs p:hover {
@@ -47,4 +51,26 @@ h1 {
 
 .tabs p.active {
   color: rgb(83, 49, 156);
+  position: relative;
+}
+
+.line {
+  height: 3px;
+  width: 100%;
+  background-color: rgb(231, 231, 231);
+  position: absolute;
+  top: 97px;
+}
+
+.tabs .active::before {
+  content: "";
+  width: 200%;
+  height: 4px;
+  background-color: rebeccapurple;
+  position: absolute;
+  bottom: -30.5px;
+  left: -50%;
+  z-index: 2;
+  border-radius: 10px;
+  background-color: rgb(83, 49, 156);
 }
