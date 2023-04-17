@@ -1,1 +1,10 @@
 /* cost estimator webpage */
+
+body {
+  background-color: rgb(233, 223, 255);
+  font-family: "Open Sans", sans-serif;
+}
+
+h1 {
+  color: rgb(83, 49, 156);
+}
